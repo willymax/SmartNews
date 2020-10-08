@@ -40,8 +40,8 @@ abstract class AppDatabase : RoomDatabase() {
                     object : RoomDatabase.Callback() {
                         override fun onCreate(db: SupportSQLiteDatabase) {
                             super.onCreate(db)
-                            val request = OneTimeWorkRequestBuilder<NewsFeedsDatabaseWorker>().build()
-                            WorkManager.getInstance(context).enqueue(request)
+//                            val request = OneTimeWorkRequestBuilder<NewsFeedsDatabaseWorker>().build()
+//                            WorkManager.getInstance(context).enqueue(request)
                         }
                     }
                 )

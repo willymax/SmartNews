@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_5"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SingleNewsArticleFragment">
 
@@ -28,7 +30,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/feed_article"
+                    android:id="@+id/feedTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="3"
@@ -50,6 +52,7 @@
                 />
 
             <TextView
+                android:id="@+id/feedDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/spacing_large"

@@ -18,4 +18,7 @@ class NewsFeedListViewModel (
     fun getNewsFeedItem(id: Long): LiveData<NewsFeedItem> {
         return repository.getNewsFeedItem(id)
     }
+    fun loadNewsFeed() {
+        repository.loadNewsFeed()
+    }
 }

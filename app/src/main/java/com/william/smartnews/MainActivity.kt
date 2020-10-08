@@ -1,6 +1,7 @@
 package com.william.smartnews
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
@@ -29,7 +30,13 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(topAppBar, navController, appBarConfiguration)
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             val destinationId = destination.id
-
+            if (destinationId == R.id.main_fragment) {
+                topAppBar.menu.findItem(R.id.action_share).isVisible = false
+                topAppBar.menu.findItem(R.id.action_save).isVisible = false
+            } else {
+                topAppBar.menu.findItem(R.id.action_share).isVisible = true
+                topAppBar.menu.findItem(R.id.action_save).isVisible = true
+            }
         }
     }
 }

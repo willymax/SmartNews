@@ -39,6 +39,7 @@ class AdapterNewsFeed(
     class OriginalViewHolder(v: View) : RecyclerView.ViewHolder(v) {
         var image: ImageView = v.findViewById(R.id.image)
         var title: TextView = v.findViewById(R.id.title)
+        var feedDescription: TextView = v.findViewById(R.id.feedDescription)
         var lytParent: View = v.findViewById(R.id.lyt_parent)
 
     }
@@ -55,6 +56,7 @@ class AdapterNewsFeed(
         if (holder is OriginalViewHolder) {
             val newsFeedItem: NewsFeedItem = items[position]
             holder.title.text = newsFeedItem.feedTitle
+            holder.feedDescription.text = newsFeedItem.feedDescription
             Tools.displayImageOriginal(context, holder.image, newsFeedItem.feedImage)
             holder.lytParent.setOnClickListener(View.OnClickListener { view ->
                 if (mOnItemClickListener == null) return@OnClickListener

@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="overlay_dark_50">#80000000</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="primaryLightColor">#B2DFDB</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+
+    <color name="primaryColor">#f5f6f8</color>
+    <color name="primaryDarkColor">#c2c3c5</color>
+    <color name="secondaryColor">#000000</color>
+    <color name="secondaryLightColor">#2c2c2c</color>
+    <color name="secondaryDarkColor">#000000</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorOnBackground">#F5F6F8</color>
+    <color name="colorBackground">#F5F6F8</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+    <color name="overlay_dark_50">#80393636</color>
+
+
+
 
 <!--    grey color variation-->
     <color name="grey_3">#f7f7f7</color>
