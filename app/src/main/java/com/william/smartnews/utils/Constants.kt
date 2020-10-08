@@ -6,3 +6,5 @@ package com.william.smartnews.utils
  * @author willi
  */
 const val BASE_URL: String = "https://smartapplications.free.beeceptor.com/"
+const val DATABASE_NAME = "smartnews-db"
+const val NEWS_FEEDS_DATA_FILENAME = "newsfeeds.json"

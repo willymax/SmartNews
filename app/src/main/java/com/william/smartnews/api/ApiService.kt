@@ -1,6 +1,6 @@
 package com.william.smartnews.api
 
-import com.william.smartnews.models.Feed
+import com.william.smartnews.models.NewsFeedItem
 import com.william.smartnews.utils.BASE_URL
 import com.william.smartnews.utils.NetworkUtils
 import retrofit2.Call
@@ -16,14 +16,14 @@ import retrofit2.http.*
  */
 interface ApiService {
     @GET("feed")
-    fun loadNewsArticles(): Call<ApiModelList<Feed?>>
+    fun loadNewsArticles(): Call<ApiModelList<NewsFeedItem>>
 
     companion object {
         /**
          * Build an instance of the app Api service
          * @return ApiService
          */
-        fun buildInstance(): ApiService? {
+        fun buildInstance(): ApiService {
             return Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(NetworkUtils.buildClient())
