@@ -6,7 +6,7 @@
     android:background="@color/grey_5"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SingleNewsArticleFragment">
+    tools:context=".ui.feed.SingleNewsArticleFragment">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_scroll_view"

@@ -1,4 +1,4 @@
-package com.william.smartnews
+package com.william.smartnews.ui.feed
 
 import androidx.lifecycle.ViewModel
 
